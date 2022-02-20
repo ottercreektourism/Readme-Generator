@@ -1,8 +1,14 @@
 const inquirer = require ('inquirer');
 const fs = require('fs');
+const generateMarkdown = require('./generate-markdown');
 
 inquirer
     .prompt([
+        {
+            type:'input',
+            message: 'Whats the title of your readme?',
+            name: 'title',
+        },
         {
             type:'input',
             message: 'What should the user do to install necessary dependencies?',
@@ -14,9 +20,10 @@ inquirer
             name: 'usage',
         },
         {
-            type:'input',
+            type:'list',
             message: 'Which license is being used?',
             name: 'license',
+            choices: ['Apache2.0', 'MIT', 'BSD3', 'none']
         },
         {
             type:'input',
@@ -36,7 +43,7 @@ inquirer
 
     ])
 
-    .then(({installation, usage, license, contributing, tests, questions}) => {
-        fs.appendFile('README.md', '##installation ${installation}, ${usage}, ${license}, ${contributing}, ${tests}, ${questions}',
+    .then((response) => {
+        fs.writeFile('README.md', generateMarkdown(response),
         (err) => err ? console.error(err) : console.log('info stored!'))
     });
