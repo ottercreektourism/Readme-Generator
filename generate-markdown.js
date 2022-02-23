@@ -50,7 +50,6 @@ ${data.description}
   To install necessary dependencies, type the following command into the terminal:
   
   > ${data.installation}
- 
 
   ## Usage
   
@@ -66,11 +65,12 @@ ${data.contributing}
 
 ## Tests
 
-${data.tests}
+In terminal, type:
+> ${data.tests}
 
 ## Questions
 
-If you have any questions, please visit https://github.com/${data.questions} or email Marissa Flynn at ${data.email}.
+If you have any questions, please visit https://github.com/${data.questions} or email me at ${data.email}.
 
 
 `;

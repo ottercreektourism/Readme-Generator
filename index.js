@@ -6,7 +6,7 @@ inquirer
     .prompt([
         {
             type:'input',
-            message: 'Whats the title of your readme?',
+            message: 'What is the title of your readme?',
             name: 'title',
         },
         {
@@ -28,7 +28,7 @@ inquirer
             type:'list',
             message: 'Which license is being used?',
             name: 'license',
-            choices: ['none', 'Apache2.0', 'GNUGeneralPublicLicensev3.0', 'MIT', 'BSD2Clause"SimplifiedLicense', 'BSD3Clause"New"or"Revised"License', 'BoostSoftwareLicense1.0', 'CreativeCommonsZerov1.0Universal', 'EclipsePublicLicense2.0', 'GNUAfferoGeneralPublicLicensev3.0', 'GNUGeneralPublicLicensev2.0', 'GNULesserGeneralPublicLicensev2.1', 'MozillaPublicLicense2.0', 'TheUnlicense']
+            choices: ['none', 'Apache2.0', 'GNUGeneralPublicLicensev3.0', 'MIT', 'BSD2Clause"Simplified"License', 'BSD3Clause"New"or"Revised"License', 'BoostSoftwareLicense1.0', 'CreativeCommonsZerov1.0Universal', 'EclipsePublicLicense2.0', 'GNUAfferoGeneralPublicLicensev3.0', 'GNUGeneralPublicLicensev2.0', 'GNULesserGeneralPublicLicensev2.1', 'MozillaPublicLicense2.0', 'TheUnlicense']
         },
         {
             type:'input',
