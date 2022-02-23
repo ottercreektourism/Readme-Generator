@@ -24,45 +24,53 @@ function renderLicenseSection(license) {
     if (license === "none"){
         return "";
     }else{
-        return "## license"
+        return "## License"
     }
 }
 
 // TODO: Create a function to generate markdown for README
 function generateMarkdown(data) {
-  return `# ${data.title}
+    return `# ${data.title} 
+    
+${renderLicenseBadge(data.license)}
+
+## Description
+${data.description}
 
   ## Table of Contents 
-* [Installation](#installation)
-* [Usage](#usage)
-${renderLicenseLink(data.license)}
-* [Contributing](#Contributing)
-* [Tests](#tests)
-* [Questions](#questions)
+  * [Installation](#installation)
+  * [Usage](#usage)
+  ${renderLicenseLink(data.license)}
+  * [Contributing](#Contributing)
+  * [Tests](#tests)
+  * [Questions](#questions)
+  
+  ## Installation
+  
+  To install necessary dependencies, type the following command into the terminal:
+  
+  > ${data.installation}
+ 
 
-## installation
+  ## Usage
+  
+  ${data.usage}
+  
+  ${renderLicenseSection(data.license)}
 
-${data.installation}
-
-## usage
-
-${data.usage}
-
-${renderLicenseSection(data.license)}
-
-${renderLicenseBadge(data.license)}
+  This project is licensed under the ${data.license} license.  
 
 ## Contributing
 
 ${data.contributing}
 
-## tests
+## Tests
 
 ${data.tests}
 
-## questions
+## Questions
 
-${data.questions}
+If you have any questions, please visit https://github.com/${data.questions} or email Marissa Flynn at ${data.email}.
 
 
 `;

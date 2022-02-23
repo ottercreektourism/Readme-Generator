@@ -11,7 +11,12 @@ inquirer
         },
         {
             type:'input',
-            message: 'What should the user do to install necessary dependencies?',
+            message: 'Description of the project:',
+            name: 'description',
+        },
+        {
+            type:'input',
+            message: 'Terminal commands to make this project work:',
             name: 'installation',
         },
         {
@@ -23,11 +28,11 @@ inquirer
             type:'list',
             message: 'Which license is being used?',
             name: 'license',
-            choices: ['Apache2.0', 'MIT', 'BSD3', 'none']
+            choices: ['none', 'Apache2.0', 'GNUGeneralPublicLicensev3.0', 'MIT', 'BSD2Clause"SimplifiedLicense', 'BSD3Clause"New"or"Revised"License', 'BoostSoftwareLicense1.0', 'CreativeCommonsZerov1.0Universal', 'EclipsePublicLicense2.0', 'GNUAfferoGeneralPublicLicensev3.0', 'GNUGeneralPublicLicensev2.0', 'GNULesserGeneralPublicLicensev2.1', 'MozillaPublicLicense2.0', 'TheUnlicense']
         },
         {
             type:'input',
-            message: 'Write any contributing details.',
+            message: 'Write any contributing guidelines here:',
             name: 'contributing',
         },
         {
@@ -37,8 +42,13 @@ inquirer
         },
         {
             type:'input',
-            message: 'Write what the user should do if they have any questions:',
+            message: 'Enter your GitHub username:',
             name: 'questions',
+        },
+        {
+            type:'input',
+            message: 'Enter your contact email address:',
+            name: 'email',
         },
 
     ])
