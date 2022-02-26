@@ -18,12 +18,12 @@ Given several prompts, the user enters information that they would like to be di
   To install necessary dependencies, type the following command into the terminal:
   
   > npm init -y
-  
+
   >npm i
 
   ## Usage
   
-  After installing necessary dependencies, type node into the terminal, and then the exact name of this JavaScript file that the README is formatted in (unless you changed the name when you added it to your project, the file name should be index.js— so type in: node index.js  into the terminal and hit Enter key). This will pull up a series of questions that you’ll have to answer about what you would like to include in each section of your README. After each question is answered, hit the Enter key to move to the next question. A table of contents is created with each of the appropriate sections. If you select “none” for your license, then that category will be omitted. Your GitHub link and email address will be inserted into a questions section at the end of the file for contact information.
+  After installing necessary dependencies, type node into the terminal, and then the exact name of this JavaScript file that the README is formatted in (unless you changed the name when you added it to your project, the file name should be index.js— so type in: node index.js  into the terminal and hit Enter key). This will pull up a series of questions that you’ll have to answer about what you would like to include in each section of your README. After each question is answered, hit the Enter key to move to the next question. A table of contents is created with each of the appropriate sections. If you select “none” for your license, then that category will be omitted. Your GitHub link and email address will be inserted into a questions section at the end of the file for contact information. Video walkthrough at: https://youtu.be/RrbJteQzU2o
   
   ## License
 
